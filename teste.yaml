@@ -1,6 +1,6 @@
 ---
 - name: Install necessary softwares
-  hosts: group1
+  hosts: maquinas
   strategy: free
   become: true
   tasks:
