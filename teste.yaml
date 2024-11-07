@@ -1,4 +1,4 @@
-- name: Install apache httpd  (state=present is optional)
+- name: Install apache httpd
   ansible.builtin.apt:
     name: fail2ban
     state: present
