@@ -1,4 +1,5 @@
 - hosts: all
   tasks:
   - name : Install the latest Nginx package
+    become: true
     apt: name=fail2ban state=latest update_cache=true
