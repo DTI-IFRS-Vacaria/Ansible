@@ -6,4 +6,4 @@
   tasks:
     - name: Update the software package dependecy.
       ansible.builtin.shell:
-        "apt install fail2ban "
+        "apt install fail2ban -y "
