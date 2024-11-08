@@ -6,6 +6,10 @@
   become_user: semaphore
 
   tasks:
+  - name: Creating an empty file
+    file:
+      path: "/teste"
+      state: touch
   - name: Install apache httpd 
     ansible.builtin.apt:
       name: fail2ban
