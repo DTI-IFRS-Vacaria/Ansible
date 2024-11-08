@@ -3,6 +3,6 @@ name: I am going to install package
 hosts: all
 tasks: 
   - name: Install package
-    yum:
+    apt:
       name: fail2ban
       state: latest
