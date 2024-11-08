@@ -5,6 +5,6 @@
   tasks:
   - name: Install apache httpd 
     ansible.builtin.apt:
-      name: fail2ban
+      name: unzip
       state: present
     become: true
