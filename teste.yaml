@@ -1,7 +1,7 @@
 ---
 - name: Update web servers
   hosts: all
-  become: yes
+  become: true
   become_user: semaphore
 
   tasks:
@@ -9,5 +9,5 @@
     ansible.builtin.apt:
       name: fail2ban
       state: present
-    become: yes
+    become: true
     become_user: semaphore
