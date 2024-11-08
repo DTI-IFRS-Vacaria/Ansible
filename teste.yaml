@@ -1,5 +1,8 @@
-- hosts: all
-  tasks:
-  - name : Install the latest Nginx package
-    become: true
-    apt: name=fail2ban state=latest update_cache=true
+---
+name: I am going to install package
+hosts: all
+tasks: 
+  - name: Install package
+    yum:
+      name: fail2ban
+      state: latest
