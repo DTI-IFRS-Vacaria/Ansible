@@ -1,7 +1,7 @@
-name: I am going to install package
 hosts: all
 tasks: 
   - name: Install package
+    become: true
     apt:
       name: fail2ban
       state: latest
