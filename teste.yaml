@@ -1,10 +1,11 @@
 ---
 - name: Update web servers
   hosts: all
+  become: yes
+  become_user: semaphore
 
   tasks:
   - name: Install apache httpd 
     ansible.builtin.apt:
       name: fail2ban
       state: present
-    become: true
