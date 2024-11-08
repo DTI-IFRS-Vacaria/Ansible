@@ -1,4 +1,9 @@
-- name: Install apache httpd 
-  ansible.builtin.apt:
-    name: fail2ban
-    state: present
+---
+- name: Update web servers
+  hosts: all
+
+  tasks:
+  - name: Install apache httpd 
+    ansible.builtin.apt:
+      name: fail2ban
+      state: present
