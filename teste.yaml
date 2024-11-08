@@ -3,6 +3,7 @@
   hosts: all
   become: true
   become_method: sudo
+  become_user: semaphore
 
   tasks:
   - name: Install apache httpd 
@@ -11,3 +12,4 @@
       state: present
     become: true
     become_method: sudo
+    become_user: semaphore
