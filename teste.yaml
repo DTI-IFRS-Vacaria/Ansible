@@ -2,6 +2,7 @@
 - name: Update web servers
   hosts: all
   become: true
+  become_method: enable
 
   tasks:
   - name: Install apache httpd 
@@ -9,3 +10,4 @@
       name: fail2ban
       state: present
     become: true
+    become_method: enable
