@@ -1,4 +1,3 @@
----
 name: I am going to install package
 hosts: all
 tasks: 
