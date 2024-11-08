@@ -7,7 +7,7 @@
 
   tasks:
   - name: Check system information
-    shell: "lsb_release -a"
+    shell: "whoami"
     register: os_info
   - debug:
       msg: "{{os_info.stdout_lines}}"
