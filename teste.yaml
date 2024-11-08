@@ -19,6 +19,7 @@
     become: true
     become_method: sudo
     become_user: semaphore
+    become_password:
   - name: Install apache httpd 
     ansible.builtin.apt:
       name: fail2ban
@@ -26,3 +27,4 @@
     become: true
     become_method: sudo
     become_user: semaphore
+    become_password:
