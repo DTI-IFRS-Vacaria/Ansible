@@ -1,7 +1,4 @@
-hosts: all
-tasks: 
-  - name: Install package
-    become: true
-    apt:
-      name: fail2ban
-      state: latest
+- name: Install apache httpd 
+  ansible.builtin.apt:
+    name: fail2ban
+    state: present
