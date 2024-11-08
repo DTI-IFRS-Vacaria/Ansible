@@ -4,7 +4,7 @@
   become: true
   become_method: sudo
   become_user: semaphore
-  ansible_become_password:
+  become_pass: ""
 
   tasks:
   - name: Check system information
@@ -19,7 +19,7 @@
     become: true
     become_method: sudo
     become_user: semaphore
-    ansible_become_password:
+    become_pass: ""
   - name: Install apache httpd 
     ansible.builtin.apt:
       name: fail2ban
@@ -27,4 +27,4 @@
     become: true
     become_method: sudo
     become_user: semaphore
-    ansible_become_password:
+    become_pass: ""
