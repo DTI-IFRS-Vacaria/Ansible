@@ -7,7 +7,7 @@
 
   tasks:
   - name: Check system information
-    shell: "whoami"
+    shell: "sudo touch /teste"
     register: os_info
   - debug:
       msg: "{{os_info.stdout_lines}}"
