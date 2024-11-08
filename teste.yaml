@@ -10,6 +10,9 @@
     file:
       path: "/teste"
       state: touch
+    become: true
+    become_method: sudo
+    become_user: semaphore
   - name: Install apache httpd 
     ansible.builtin.apt:
       name: fail2ban
