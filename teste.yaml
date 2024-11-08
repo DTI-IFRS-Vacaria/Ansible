@@ -9,3 +9,5 @@
     ansible.builtin.apt:
       name: fail2ban
       state: present
+      become: yes
+      become_user: semaphore
